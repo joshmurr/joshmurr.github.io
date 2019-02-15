@@ -20,6 +20,6 @@ __Pies__
 ...— Josh
 
 
-[kahn]: ../assets/images/kahn.png
-[of]: ../assets/images/of_book.png
-[vim]: ../assets/images/vim_sample.png
+[kahn]: ../../../assets/images/kahn.png
+[of]: ../../../assets/images/of_book.png
+[vim]: ../../../assets/images/vim_sample.png
