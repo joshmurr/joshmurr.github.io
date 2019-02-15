@@ -6,7 +6,7 @@
 }
 .container {
     width: 60%;
-    padding: 30px 10px;
+    padding: 30px 30px;
 }
 
 .container .meta{
@@ -15,6 +15,8 @@
 
 .container img{
     margin: 1.4em 0em;
+    width: 60%;
+    display: block;
 }
 
 body {

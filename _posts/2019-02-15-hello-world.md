@@ -14,10 +14,11 @@ __Pies__
 ![mastering_of][of]
 4. I have fully commited to Vim and find all other editors annoying now. Which is nice.
 ![vim][vim]
-5. [I have a bad website.](joshmurr.com)
+5. [I have a bad website.](http://joshmurr.com)
 6. I guess I'm on the road to a life based in, on and around computing. Whether my applications above are successful or not (they may not be), that _is_ the road I'm on.
 
-...— Josh
+<br>
+Josh
 
 
 [kahn]: ../../../assets/images/kahn.png
