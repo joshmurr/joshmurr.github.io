@@ -14,7 +14,7 @@ Back in OpenFrameworks things went a bit more smoothly and it wasn't long before
 
 ![jitter-boid](../../../assets/images/vectors/jitter_target_better.gif)
 
-It took longer to get the _debug_ symbols to appear where I wanted them too, as the differentiation between a vector as a point in space, and a vector which describes magnitude and direction still gets me. But again, this seemed like a worthwhile exercise.
+It took longer to get the _debug_ symbols to appear where I wanted them to, as the differentiation between a vector as a point in space, and a vector which describes magnitude and direction still gets me. But again, this seemed like a worthwhile exercise. In the GIF below you can see the circle which is placed around the target. The circle actually defines the region in which the _jitter_ vector can be created where the radius is the madnitude, and it can be in any random direction.
 
 ![jitter-boid-debug](../../../assets/images/vectors/jitter_target_debug.gif)
 
