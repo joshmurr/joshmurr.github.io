@@ -14,10 +14,19 @@
 }
 
 .container img{
-    margin: 1.4em auto;
+    margin: 0 auto;
     width: 60%;
     display: block;
 }
+
+.container label{
+    margin: 0 auto;
+    width: 60%;
+    display: block;
+    color: #0F0;
+    font-size: 0.7em;
+}
+
 
 body {
     margin-left: 160px;
@@ -58,7 +67,7 @@ footer ul li {
 }
 a {
     text-decoration: none;
-    color: #999;
+    color: #000;
 }
 a:hover {
     color: white;
@@ -68,11 +77,18 @@ h1 {
     font-family:'IBM Plex Mono', 'monospace', 'Arial', 'Sans-Serif';
     font-weight: bold;
     text-decoration: underline;
+    padding-bottom: 1.0em;
 }
+
+h2 {
+    font-weight: bold;
+    padding-bottom: 1.0em;
+}
+    
 p {
     font-size: 1.0em;
     line-height: 1.4em;
-    color: #333;
+    color: #444;
     padding-bottom: 1.0em;
 }
 
@@ -95,4 +111,18 @@ ul.posts li {
     padding: 1px 0px;
     list-style: none;
     border-bottom: 1px solid black;
+}
+blockquote {
+    padding: 0 0 0 20px;
+    text-decoration: italic;
+    border-left: 2px solid #00F;
+    margin-bottom: 20px;
+}
+
+blockquote p {
+    padding-bottom: 0px;
+}
+
+strong {
+    font-weight: bolder;
 }
