@@ -17,7 +17,7 @@ function particle(loc, acc, mass_) {
   this.location = new vec(loc.x, loc.y);
   this.velocity = new vec(0, 0);
   this.acceleration = new vec(acc.x, acc.y);
-  this.lifeSpan = 255*2;
+  this.lifeSpan = 255;
   this.dead = false;
 
   this.applyForce = function (force_) {
@@ -164,10 +164,10 @@ function draw() {
   ctx.fillStyle = "white";
   ctx.fillRect(0, 0, w, h);
   updateParticleSystem();
-  console.log(systems.length);
+  // Make new particle system if all dead
+  if(systems.length === 0)addParticleSystem(new vec(w/2, h/2));
 }
 
-addParticleSystem(new vec(w/2, h/2));
 setInterval(draw, 30);
 
 
