@@ -124,5 +124,6 @@ blockquote p {
 }
 
 strong {
-    font-weight: bolder;
+    font-weight: bold;
+    text-decoration: underline;
 }
