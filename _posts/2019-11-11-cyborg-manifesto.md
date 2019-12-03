@@ -6,6 +6,8 @@ date: 2019-11-11
 
 ## A Cybog Manifest: Science, Technology, and Socialist-Feminism in the Late Twentieth Century — Donna Haraway
 
+__Some quotes..:__
+
 Haraway says in the first paragraph that she thinks blasphemy is the perfect stance to take to explain her _political myth_, because _blasphemy is not apostasy_ and such allows her to remain within the boundarys she is critiquing.
 
 > At the centre of my ironic faith, my blasphemy, is the image of the cyborg.
