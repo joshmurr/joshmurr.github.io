@@ -132,3 +132,7 @@ strong {
     color: #0F0;
     font-size: small;
 }
+
+hr {
+    margin-bottom: 1em;
+}
