@@ -1,0 +1,31 @@
+I"�<p>Evidently I’ve let a few months go by without any update on here, but I’ve kept busy regardless.</p>
+
+<h3 id="maths">Maths</h3>
+
+<p><img src="../../../assets/images/update/kahn1.png" alt="kahn1" />
+<img src="../../../assets/images/update/kahn2.png" alt="kahn2" /></p>
+
+<p>I kept up with the maths on Kahn Academy. I finished the Precalculus course and moved on to the Differential Calculus. Still maths which I did at A-Level but a little harder to get into. Good to be doing some calculus with machine learning in mind, but I’ve shelved the maths for a little while to focus on learning C++.</p>
+
+<h3 id="c">C++</h3>
+<p><a href="https://www.udemy.com/free-learn-c-tutorial-beginners/"><img src="../../../assets/images/update/cpp.png" alt="cpp" /> </a></p>
+
+<p>I’m currently about 70% through this Udemy C++ course. It’s my first time enrolling on a Udemy course and this one isn’t bad. It’s a little slow and could potentially be more thorough, but it is good practice to see C++ used from scratch. The outcome will be a particle simulator too which I always enjoy. Once I’ve worked through this I hopefully will have enough understanding to write simeple graphical applications in C++ with basic graphics libraries, like SDL. I have in mind to create some some cellula automata programs. And also to return to the ofxBoids library with newfound C++ knowledge.</p>
+
+<h3 id="speakers-and-amplifier">Speakers and Amplifier</h3>
+
+<p>Something I’ve wanted to do for years is to make my own speakers and an amplifier set up. So I’ve finally begun that process with a pretty simple set up. The speaker drivers are 5” 8ohm full range 20W nominal Visaton’s. And the amp consists of a small <a href="https://quasarelectronics.co.uk/Item/velleman-k8084-volume-tone-control-pre-amplifier-kit">Velleman pre-amp kit build</a> and a 30W <a href="https://quasarelectronics.co.uk/Item/velleman-k4003-2-x-30w-stereo-audio-power-amplifier-kit">Velleman power amp kit</a>. I’m yet to test anything…</p>
+
+<p><img src="../../../assets/images/update/speaker.png" alt="speaker" /></p>
+
+<h3 id="cs50--intro-to-computer-science">CS50 — Intro to Computer Science</h3>
+
+<p><a href="https://online-learning.harvard.edu/course/cs50-introduction-computer-science"><img src="../../../assets/images/update/cs50.png" alt="cs50" /></a></p>
+
+<p>I read in an article somewhere that this was a good online course to take, and it does seem like a good one after the first lecture and a half. It gets into C programming early and then works up through the abstractions, up to working with Python and JavaScript. I’ve been wanting to do some pure C programming and this seems like a nice primer to get into.</p>
+
+<p>I think that’s all that is necessary for an update. I have also been working at an architecture school as a workshop technician and I’ve been reading some books. But maybe more about those things another time.</p>
+
+<p><br />
+Josh</p>
+:ET

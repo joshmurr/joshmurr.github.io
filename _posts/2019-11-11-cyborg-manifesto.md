@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "A Cyborg Manifest"
+title: "A Cyborg Manifesto"
 date: 2019-11-11
 ---
 

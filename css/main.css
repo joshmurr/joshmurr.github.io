@@ -127,3 +127,8 @@ strong {
     font-weight: bold;
     text-decoration: underline;
 }
+
+.footnote {
+    color: #0F0;
+    font-size: small;
+}

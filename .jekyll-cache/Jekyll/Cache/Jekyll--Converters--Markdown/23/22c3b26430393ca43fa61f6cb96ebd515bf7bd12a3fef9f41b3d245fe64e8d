@@ -1,0 +1,24 @@
+I"�<p><a href="https://www.academia.edu/40382918/Defining_AI_Arts_Three_Proposals">Defining AI Arts: Three Proposals</a> by Lev Manovich is a good attempt to categorise the new forms of artwork which have been, and are being made in recent times through computational means, or with computation in the process. Manovich approaches the topic from a few different perspectives, but continually points out where AI Arts is lacking, with respect to many definitions of art as we know it.</p>
+
+<p>In section 1 he says that many attempts at ‘AI Art’ so far have mostly been <em>simulations of historical art</em>, where in fact <em>the main strategy of modern art</em> has been to <em>constantly expand what counts as art</em>. The latter being a more meta definition of what it means to be making [modern] art, and he speaks of the former as <em>“traditional art,” i.e. objects rather than process</em>.</p>
+
+<p>In section 2 he asks whether there is a distinction between generative computational approaches, and the more recent machine learning [neural network] approaches to creating artifacts. He cites <a href="https://arxiv.org/pdf/1807.10201.pdf">this example</a> of a neural net trained to match the ‘style’ of famous historical painters, but argues it fails to match the <em>logic of his [Van Gogh] art</em>, because Van Gogh’s paintings were <em>content specific</em>, he was not arbitrarily painting in his self-made Van Gogh ‘style’.</p>
+
+<p>The human control through the process of designing a machine learning algorithm and how it is trained on a curated dataset, and then encouraged to give a certain output, Manovich Argues, <em>is more restrictive than the earlier approaches</em> (generative, automata etc.).</p>
+
+<blockquote>
+  <p>What defines whether something is “AI” or not is not at method but the amount and type of control we exercise over algorithmic process.</p>
+</blockquote>
+
+<p>In section 3 he continues to think about the notion of style, and in particular <em>systematic style</em>. <em>Jackson Pollock’s mature abstract expressionist paintings are indeed almost like traditional ornaments, which one part containing all DNAs of the whole painting</em>.</p>
+
+<blockquote>
+  <p>Why are we not interested to create images that have one aesthetic system in one image corner and a completely different system in another?</p>
+</blockquote>
+
+<p>Manovich closes by suggesting that it is in this mode of thinking where computers could <em>break away from this meta pattern of human culture. Let’s teach computers to do something we humans can’t do.</em> Manovich gives the example of <a href="https://openai.com/blog/musenet/">MuseNet</a> by OpenAi.</p>
+
+<blockquote>
+  <p>It’s a common thing to say thatif computers can be programed to create really novel art, we will not recognize it asart, or not will understand it. But maybe this is not that interesting or ground-breaking. Instead, we may want to focus on what lies between such “art forcomputers”, non-comprehensible to humans, and the universe ofall aesthetic possibilities already realized in human civilizations (including our ownmodernist and contemporary periods). Certainly, so many possibilities can beexplored in this vast “in between.”</p>
+</blockquote>
+:ET

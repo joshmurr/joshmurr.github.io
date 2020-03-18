@@ -1,0 +1,127 @@
+I"�<p>I’ve been doing a lot of maths recently on <a href="https://www.khanacademy.org/">Khan Academy</a> which has been great, and I’ll write more about this soon and it has been particularly interesting re-learning some maths <em>after</em> having done some coding for a few years. I’m starting to see how useful all the maths I learnt at college <em>is</em>, and also starting to realise what half the code I have written/copied actually <em>does</em>. As I’ve been sorting out my website I’ve been digging out lots of old experiments so I decided to pick apart one such experiment to see if I can really understand what is going on.</p>
+
+<p><img src="../../../assets/images/arrows/arrows4.gif" alt="dots" /></p>
+
+<p>The satisfying wobbly dots thing above is about 5 years old now. I got to this point after following a few tutorials on the wonderful <a href="https://www.youtube.com/user/codingmath">Coding Math</a> YouTube channel. The narrator does a good job of explaining the Maths as he goes, but not quite in the detail I now want. Evidentally it was somehow rotating each dot to the direction of where the mouse is located, that much is clear.</p>
+
+<p>First I replaced the dots with arrows which was how it was originally created. I also thought I had <em>corrected</em> the <code class="highlighter-rouge">atan2</code> function by putting the <code class="highlighter-rouge">x</code> before the <code class="highlighter-rouge">y</code> which confused things even further:</p>
+
+<p><img src="../../../assets/images/arrows/code_snippet.png" alt="code" />
+<img src="../../../assets/images/arrows/arrows_wrong_dir.png" alt="arrows" /></p>
+
+<p>All the arrows are supposed to be pointing at the mouse location, which, when I swapped the x and y back around again, it did work (ie. <code class="highlighter-rouge">Math.atan2(y,x)</code>):</p>
+
+<p><img src="../../../assets/images/arrows/arrows2.gif" alt="arrows" /></p>
+
+<p>I also noticed how slow it could get if I started resizing the window or playing with the <code class="highlighter-rouge">rows</code> and <code class="highlighter-rouge">cols</code> which should quite simply change the number of arrows on the screen. Changing the color of one of the arrows was making no sense at all either, as the ID’s they should be were not working. So I added an ID to each arrow and wrote it on the screen:</p>
+
+<p><img src="../../../assets/images/arrows/massive_array.png" alt="massive_array" /></p>
+
+<p>Something wasn’t right! Naturally it was an issue up in the <code class="highlighter-rouge">for loops</code> which filled the arrows array with all the arrows. I sorted that out and also changed how each arrow is placed on screen with this snippet</p>
+
+<pre>
+    xloc = (ii * (width/cols)) + ((width/cols)/2);
+    yloc = (i * (height/rows)) + ((height/rows)/2);
+    arrows.push(new arrow(xloc,yloc, i+ii));
+</pre>
+
+<p>I’m sure there is a better way of doing that, but everything now seemed to be sorted:</p>
+
+<p><img src="../../../assets/images/arrows/sorted_grid.png" alt="sorted" />
+<img src="../../../assets/images/arrows/sorted_grid2.png" alt="sorted" /></p>
+
+<p><em>Now</em> I could start doing some maths! I played with <a href="https://jsbin.com/?html,output">JSBin</a> a little to get to grips with the atan2 function which clearly was doing all the work here:</p>
+
+<p><img src="../../../assets/images/arrows/jsbin.png" alt="jsbin" /></p>
+
+<p><code class="highlighter-rouge">Atan2</code> does quite simply return the ArcTangent of two given co-ordinates <code class="highlighter-rouge">x</code> and <code class="highlighter-rouge">y</code> but given to the function as so: <code class="highlighter-rouge">Math.atan2(y,x)</code>. This is useful for finding the angle between a point on the canvas and the mouse location as if you take the change in x as <strong>mousex - x1</strong> and the change in y as <strong>mouseY - y1</strong> the result is the angle in radians from the point (x1, y1) <em>pointing to</em> to (mouseX, mouseY). I had to work this out using some arbitrary co-ordinates as examples, and also logging the co-ordinates of the mouse, a given arrow and it’s angle to the console.</p>
+
+<p><img src="../../../assets/images/arrows/sb1.jpg" alt="notebook1" />
+<img src="../../../assets/images/arrows/sb2.jpg" alt="notebook2" /></p>
+
+<p>I also found in my scribbling that <code class="highlighter-rouge">atan2</code> only returns an angle between -π and π which I later confirmed on Wikipedia:</p>
+
+<p><img src="../../../assets/images/arrows/arctan_wiki.png" alt="wiki" /></p>
+
+<p>It still took my a while to get my head around how simply adding <code class="highlighter-rouge">context.rotate(this.angle);</code> was enough to rotate every item drawn to the direction of the mouse. It is down (I think) to the way that the javascript circle is drawn (the same as the <em>unit circle</em>) so it maps to the co-ordinates of the screen (where (0,0) is the top-left corner). The fact that -π &lt; atan2 &lt; π is essentially irrelevant to the maths as it produces the same results as if you were working it out on paper.</p>
+
+<p><img src="https://www.w3schools.com/tags/img_arc.gif" alt="javascript_circle" />
+<img src="../../../assets/images/arrows/arrows3.gif" alt="arrows3" /></p>
+
+<p>So finally I could change it back to the original circles happy in the knowledge I truly understand this simple little trick. 3 hours well spent…</p>
+
+<p><img src="../../../assets/images/arrows/arrows4.gif" alt="arrows4" /></p>
+
+<p>It actually was 3 hours well spent I think. At the very least it’s satisfying to truly understand something which you once took for granted. It’s also a nice way to keep language I’m not really using right now a bit fresher in my memory — it was actually quite nice to be using Javascript again. It’s also giving me faith in my decision to really work on the maths.</p>
+
+<p>I will post the code below, but currently I don’t have everything set up to format code blocks nicely, that’ll change hopefully soon:</p>
+
+<pre>
+    window.onload = function() {
+        var canvas = document.getElementById("canvas"),
+            context = canvas.getContext("2d"),
+            width = canvas.width = window.innerWidth,
+            height = canvas.height = window.innerHeight,
+            cols = 30,
+            rows = 20,
+            arrows = [];
+    
+        init();
+        globalRender();
+    
+        function init(){
+            for(var i=0; i&lt;rows; i++){
+                for(var ii=0; ii&lt;cols; ii++){
+                    xloc = (ii * (width/cols)) + ((width/cols)/2);
+                    yloc = (i * (height/rows)) + ((height/rows)/2);
+                    arrows.push(new arrow(xloc,yloc, i+ii));
+                }
+            }
+        }
+    
+        function globalRender(){
+            context.clearRect(0,0,width,height);
+            for(var j=0; j&lt;arrows.length; j++){
+                arrows[j].render(j);
+            }
+            requestAnimationFrame(globalRender);
+        }
+    
+        function arrow(x_, y_, id_){
+            this.x = x_;
+            this.y = y_;
+            this.angle = 0;
+            this.dx, this.dy;
+            this.id = id_;
+    
+            this.render = function(id2){
+                context.save();
+                context.translate(this.x,this.y);
+                context.rotate(this.angle);
+        
+                context.beginPath();
+                /*context.moveTo(20,0);
+                context.lineTo(-20,0);
+                context.moveTo(20,0);
+                context.lineTo(10,-10);
+                context.moveTo(20,0);
+                context.lineTo(10,10);*/
+                context.arc(15,0,3,0,Math.PI*2);
+                context.fill();
+                context.restore();
+            }
+        }
+    
+        document.body.addEventListener("mousemove",function(event){
+            for(var k=0; k&lt;arrows.length; k++){
+                arrows[k].dx = event.clientX - arrows[k].x;
+                arrows[k].dy = event.clientY - arrows[k].y;
+                arrows[k].angle = Math.atan2(arrows[k].dy,arrows[k].dx);
+            }
+        });
+    };
+</pre>
+
+<p><br />
+Josh</p>
+:ET

@@ -1,0 +1,21 @@
+I"�<p>The <a href="https://www.barbican.org.uk/whats-on/2019/event/ai-more-than-human">AI: More Than Human</a> exhibition at the Barbican was hit and miss. On the whole it is undoubtedly a very interesting exhibition to go to, but not mind blowing. If you’re at all interested in AI you would be familiar with most of the work in there, from <a href="https://en.wikipedia.org/wiki/Analytical_Engine">Charles Babbage’s <em>Analytical Engine</em></a> to <a href="http://www.memo.tv/portfolio/learning-to-see/">Memo Akten’s <em>Learning to See</em></a>, so there aren’t any amazing secret’s in there to discover. But the format of the show in itself is an interesting thing to see.</p>
+
+<p>For me the best bits were seeing a lot of the works, or means of display breaking down. We witnessed 3-4 different exhibits have to be <em>restarted</em> to get them going again (which seemed like a daily occurence to the staff), and many of the lovely looking Dell touchscreens either not responding well, or just not working.</p>
+
+<p><img src="../../../assets/images/barbican_ai/frozen_screen.jpg" alt="frozen" />
+(The screen froze when it asked me to pull ‘my worst face’. Coincidence? I think not.)
+<img src="../../../assets/images/barbican_ai/china_anim.jpg" alt="china_anim" />
+This was part of a really well mae animation about AI in China. Contained some pretty wild claims of the Chinese governements plans for it’s <em>City Brain</em> concept which will manage traffic flows with <em>smart traffic lights</em> and the like, but also monitor faces cross-referenced to a full database of it’s citizens faces to help “find missing children” and track criminals. Dark 1984 kinda stuff.</p>
+
+<p><img src="../../../assets/images/barbican_ai/plants.jpg" alt="plants" />
+I’ve always enjoyed these kinds of <em>comutational farming</em> projects. Seems like an easy application of IoT tech with plenty of sensors, computer vision and some pumps and motors just for a laugh.
+<img src="../../../assets/images/barbican_ai/robot.jpg" alt="robot" />
+And then then obligatory robot flailing it’s weird arms around and twitching it’s sketchy fingers with a creepy prosthetic face, doing it’s thing.
+<img src="../../../assets/images/barbican_ai/robot.jpg" alt="robot" />
+It was really nicely made though, I like the sheet steel/ali with aluminium extrusion.</p>
+
+<p>I was also quite interested by the coice of content. There is still a lot of focus on the abstract representations of ‘what a computer sees’ or ‘how a computer thinks’. An example was of a computer “watching” American Beauty, which the viewer could listen to with headphones, whilst drawing out a line in 3D space on a white background. This was meant to highlight the differences in how a computer processes the film compared to how a human does. Complete nonsesnse, it’s no more interesting than switching sensors around on an Arduino and getting a buzzer to sound when you get a text, or a motor to turn when someone tweets you. Perhaps there is still a lack of understanding among the general public about the concept of the algorithm and what that actaully means. A computer only “sees” what we tell it to see, and then only “reacts” how we terll to react. Even in machine learning applications the scope for it to do something unusual is very limited. AlphaGo playing a rouge move early in the groundbreaking match against Lee Sedol was <em>unusual</em> and [don’t get me wrong] fascinating, but it still played a move on the Go board, as expected. It didn’t tell Sedol to turn around and then spit in his coffee. I guess I wasn’t shocked or suprised by anything in the exhibition, but I wonder if the general public were.</p>
+
+<p><br />
+Josh</p>
+:ET
